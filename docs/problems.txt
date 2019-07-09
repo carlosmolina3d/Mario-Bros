@@ -1,0 +1,11 @@
+Top takes priorty
+########################
+
+Read more about project settings -> Display -> Window -> Stretch Mode, and Aspect.
+
+UI seems responsive, but needs testing. Assuring that UI is indeed responsive, and properly laid out.
+
+Scenes aren't created that the main menu can call.
+
+
+

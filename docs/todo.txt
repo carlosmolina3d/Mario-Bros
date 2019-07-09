@@ -1,0 +1,13 @@
+Top takes priorty
+########################
+
+Gather more info on Mario Bros.
+
+builing the basic level.
+
+add player, collisions, and input.
+
+adjustments for B version.
+
+build demo mode
+

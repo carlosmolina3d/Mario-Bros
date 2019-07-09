@@ -1,0 +1,105 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/brick.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/ground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/pipe.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/pipePartA.tscn" type="PackedScene" id=4]
+
+[node name="main" type="Node"]
+
+[node name="bricks" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="brick" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 32, 704 )
+
+[node name="brick10" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 544, 704 )
+
+[node name="brick2" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 96, 704 )
+
+[node name="brick14" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 608, 704 )
+
+[node name="brick3" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 160, 704 )
+
+[node name="brick12" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 672, 704 )
+
+[node name="brick4" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 224, 704 )
+
+[node name="brick13" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 736, 704 )
+
+[node name="brick20" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 1056, 704 )
+
+[node name="brick5" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 288, 704 )
+
+[node name="brick11" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 800, 704 )
+
+[node name="brick19" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 1120, 704 )
+
+[node name="brick6" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 352, 704 )
+
+[node name="brick16" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 864, 704 )
+
+[node name="brick21" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 1184, 704 )
+
+[node name="brick7" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 416, 704 )
+
+[node name="brick15" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 928, 704 )
+
+[node name="brick18" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 1248, 704 )
+
+[node name="brick8" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 480, 704 )
+
+[node name="brick9" parent="bricks" instance=ExtResource( 1 )]
+position = Vector2( 992, 704 )
+
+[node name="ground" type="Node" parent="."]
+
+[node name="ground" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 32, 464 )
+
+[node name="ground3" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 32, 224 )
+
+[node name="ground2" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 96, 464 )
+
+[node name="ground4" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 96, 224 )
+
+[node name="pipes" type="Node" parent="."]
+
+[node name="pipe" parent="pipes" instance=ExtResource( 3 )]
+position = Vector2( 1248, 640 )
+
+[node name="pipe2" parent="pipes" instance=ExtResource( 4 )]
+position = Vector2( 32, 640 )
+
+[node name="pow" type="Node" parent="."]
+
+[node name="players" type="Node" parent="."]
+
+[node name="fireballs" type="Node" parent="."]
+
+[node name="enemies" type="Node" parent="."]
+
+[node name="coins" type="Node" parent="."]
+
+[node name="Position2D" type="Position2D" parent="coins"]
