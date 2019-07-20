@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/brick.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/ground.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/pipe.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/pipePartA.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/powBlock.tscn" type="PackedScene" id=5]
 
 [node name="main" type="Node"]
 
@@ -71,35 +72,219 @@ position = Vector2( 480, 704 )
 position = Vector2( 992, 704 )
 
 [node name="ground" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="ground" parent="ground" instance=ExtResource( 2 )]
-position = Vector2( 32, 464 )
+position = Vector2( 32, 496 )
 
-[node name="ground3" parent="ground" instance=ExtResource( 2 )]
-position = Vector2( 32, 224 )
+[node name="ground34" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 256, 304 )
+
+[node name="ground41" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 704, 304 )
+
+[node name="ground18" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 32, 176 )
+
+[node name="ground25" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 864, 176 )
+
+[node name="ground30" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 800, 176 )
+
+[node name="ground12" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 928, 496 )
+
+[node name="ground6" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 160, 496 )
+
+[node name="ground35" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 384, 304 )
+
+[node name="ground42" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 832, 304 )
+
+[node name="ground19" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 160, 176 )
+
+[node name="ground26" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 992, 176 )
+
+[node name="ground13" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 1056, 496 )
+
+[node name="ground8" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 288, 496 )
+
+[node name="ground36" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 512, 304 )
+
+[node name="ground37" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 960, 304 )
+
+[node name="ground20" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 288, 176 )
+
+[node name="ground28" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 1120, 176 )
+
+[node name="ground14" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 1184, 496 )
 
 [node name="ground2" parent="ground" instance=ExtResource( 2 )]
-position = Vector2( 96, 464 )
+position = Vector2( 96, 496 )
+
+[node name="ground31" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 320, 304 )
+
+[node name="ground38" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 768, 304 )
+
+[node name="ground15" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 96, 176 )
+
+[node name="ground22" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 928, 176 )
+
+[node name="ground9" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 992, 496 )
+
+[node name="ground5" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 224, 496 )
+
+[node name="ground32" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 448, 304 )
+
+[node name="ground39" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 896, 304 )
+
+[node name="ground16" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 224, 176 )
+
+[node name="ground23" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 1056, 176 )
+
+[node name="ground10" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 1120, 496 )
+
+[node name="ground7" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 352, 496 )
+
+[node name="ground33" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 576, 304 )
+
+[node name="ground43" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 640, 304 )
+
+[node name="ground40" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 1024, 304 )
+
+[node name="ground17" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 352, 176 )
+
+[node name="ground24" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 1184, 176 )
+
+[node name="ground21" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 416, 176 )
+
+[node name="ground29" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 480, 176 )
+
+[node name="ground27" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 1248, 176 )
+
+[node name="ground11" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 1248, 496 )
+
+[node name="ground3" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 32, 336 )
+
+[node name="ground45" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 1184, 336 )
 
 [node name="ground4" parent="ground" instance=ExtResource( 2 )]
-position = Vector2( 96, 224 )
+position = Vector2( 96, 336 )
+
+[node name="ground44" parent="ground" instance=ExtResource( 2 )]
+position = Vector2( 1248, 336 )
 
 [node name="pipes" type="Node" parent="."]
 
 [node name="pipe" parent="pipes" instance=ExtResource( 3 )]
-position = Vector2( 1248, 640 )
-
-[node name="pipe2" parent="pipes" instance=ExtResource( 4 )]
 position = Vector2( 32, 640 )
+rotation = 3.14159
+
+[node name="pipe2" parent="pipes" instance=ExtResource( 3 )]
+position = Vector2( 1248, 640 )
 
 [node name="pow" type="Node" parent="."]
 
 [node name="players" type="Node" parent="."]
+
+[node name="player" parent="players" instance=ExtResource( 4 )]
+position = Vector2( 640, 160 )
 
 [node name="fireballs" type="Node" parent="."]
 
 [node name="enemies" type="Node" parent="."]
 
 [node name="coins" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="Position2D" type="Position2D" parent="coins"]
+
+[node name="ui" type="Control" parent="."]
+editor/display_folded = true
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ui"]
+anchor_right = 1.0
+custom_constants/separation = 120
+alignment = 1
+
+[node name="mario" type="Label" parent="ui/HBoxContainer"]
+margin_left = 283.0
+margin_right = 319.0
+margin_bottom = 14.0
+text = "Mario"
+
+[node name="marioScore" type="Label" parent="ui/HBoxContainer"]
+margin_left = 439.0
+margin_right = 447.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="top" type="Label" parent="ui/HBoxContainer"]
+margin_left = 567.0
+margin_right = 590.0
+margin_bottom = 14.0
+text = "Top"
+
+[node name="topScore" type="Label" parent="ui/HBoxContainer"]
+margin_left = 710.0
+margin_right = 718.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="luigi" type="Label" parent="ui/HBoxContainer"]
+margin_left = 838.0
+margin_right = 868.0
+margin_bottom = 14.0
+text = "Luigi"
+
+[node name="luigiScore" type="Label" parent="ui/HBoxContainer"]
+margin_left = 988.0
+margin_right = 996.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="Node" type="Node" parent="."]
+
+[node name="powBlock" parent="Node" instance=ExtResource( 5 )]
+position = Vector2( 640, 512 )

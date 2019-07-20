@@ -1,16 +1,19 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=8 format=1]
 
-[ext_resource path="res://scripts/player.gd" type="Script" id=1]
+[ext_resource path="res://scripts/8waymario.gd" type="Script" id=1]
 [ext_resource path="res://sprites/marioWalk1.png" type="Texture" id=2]
 [ext_resource path="res://sprites/marioWalk2.png" type="Texture" id=3]
 [ext_resource path="res://sprites/marioWalk3.png" type="Texture" id=4]
 [ext_resource path="res://sprites/marioWalk4.png" type="Texture" id=5]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 22.563
-height = 52.3415
+
+custom_solver_bias = 0.0
+radius = 21.5
+height = 55.5
 
 [sub_resource type="SpriteFrames" id=2]
+
 animations = [ {
 "frames": [ ExtResource( 2 ) ],
 "loop": false,
@@ -24,14 +27,25 @@ animations = [ {
 } ]
 
 [node name="player" type="KinematicBody2D"]
-script = ExtResource( 1 )
 
-[node name="shape" type="CollisionShape2D" parent="."]
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+script/script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
 shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
 
-[node name="ray" type="RayCast2D" parent="."]
-cast_to = Vector2( 0, 46 )
+[node name="sprite" type="AnimatedSprite" parent="."]
 
-[node name="sprites" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "walk"
+
+
